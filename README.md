@@ -81,7 +81,7 @@ npx vite build              # 生产构建
 
 ## 截图与浏览器验证（可选）
 
-`tools/screenshots.mjs` 用 Playwright 驱动本机已有的 Chromium，把输入区、草稿恢复、流式、停止、重连、503 两个分支各截一张图，并把断言值写进 `docs/screenshots/screenshots.log`。它不在默认依赖里，需要时单独装：
+`tools/screenshots.mjs` 用 Playwright 驱动本机已有的 Chromium，把输入区、草稿恢复、流式、停止、重连、503 两个分支各截一张图，并把断言值写进 `docs/screenshots/screenshots.txt`。它不在默认依赖里，需要时单独装：
 
 ```bash
 npm i -D playwright

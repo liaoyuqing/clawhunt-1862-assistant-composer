@@ -1,26 +1,26 @@
 ﻿# npx vitest run  (unit + component tests)
 # cwd: E:/AI接单/Clawhunt/delivery/work/1862/clean
-# started: 2026-11-27T12:20:52
+# started: 2026-11-27T12:32:23
 
 
  RUN  v2.1.9 E:/AI接单/Clawhunt/delivery/work/1862/clean
 
- ✓ tests/sse-parser.spec.ts (15 tests) 17ms
- ✓ tests/stop.spec.ts (2 tests) 54ms
- ✓ tests/retry-backoff.spec.ts (3 tests) 60ms
- ✓ tests/stream-events.spec.tsx (4 tests) 142ms
+ ✓ tests/sse-parser.spec.ts (15 tests) 15ms
+ ✓ tests/stop.spec.ts (2 tests) 48ms
+ ✓ tests/retry-backoff.spec.ts (3 tests) 65ms
+ ✓ tests/stream-events.spec.tsx (4 tests) 134ms
+ ✓ tests/whitespace.spec.tsx (5 tests) 90ms
  ✓ tests/ime-enter.spec.tsx (4 tests) 107ms
- ✓ tests/whitespace.spec.tsx (5 tests) 99ms
- ✓ tests/length-2000.spec.tsx (5 tests) 124ms
- ✓ tests/ac-retry-banner.spec.tsx (1 test) 144ms
- ✓ tests/draft-persist.spec.tsx (5 tests) 197ms
- ✓ tests/disabled-503.spec.tsx (2 tests) 217ms
+ ✓ tests/length-2000.spec.tsx (5 tests) 115ms
+ ✓ tests/ac-retry-banner.spec.tsx (1 test) 142ms
+ ✓ tests/draft-persist.spec.tsx (5 tests) 201ms
+ ✓ tests/disabled-503.spec.tsx (2 tests) 219ms
 
  Test Files  10 passed (10)
       Tests  46 passed (46)
-   Start at  12:20:54
-   Duration  30.15s (transform 9.39s, setup 4.83s, collect 132.80s, tests 1.16s, environment 14.35s, prepare 2.68s)
+   Start at  12:32:26
+   Duration  29.66s (transform 8.41s, setup 4.66s, collect 124.59s, tests 1.14s, environment 14.72s, prepare 2.21s)
 
 
-# finished: 2026-11-27T12:21:26
+# finished: 2026-11-27T12:32:57
 EXIT=0

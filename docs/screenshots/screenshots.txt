@@ -1,0 +1,39 @@
+mock mode -> normal (200)
+console.error: Failed to load resource: the server responded with a status of 404 (Not Found)
+screenshot 01-composer-idle.png
+AC1 user messages after IME Enter = 0
+screenshot 02-ac1-ime-enter-no-send.png
+panel closed, composer present = 0
+screenshot 03-ac4-panel-closed.png
+AC4 draft after reopen = "会员空间的对接流程是什么"
+screenshot 04-ac4-draft-restored.png
+mock mode -> slow (200)
+mid-stream text = "助手\n星澜科技为本季度的资源对接会预留了 3 个专场名额，"
+screenshot 05-streaming-in-progress.png
+normal stream text = "助手\n星澜科技为本季度的资源对接会预留了 3 个专场名额，会员可以在工作台的商机看板里提交对接申请；云栖生物与恒泰智造两家会员已经通过审核。\nsearch_me"
+screenshot 06-streaming-done.png
+mock mode -> slow (200)
+screenshot 07-stop-button-visible.png
+stop tag present = 1
+screenshot 08-stopped.png
+mock mode -> drop (200)
+console.error: Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING
+screenshot 09-ac2-retrying.png
+console.error: Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING
+console.error: Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING
+console.error: Failed to load resource: net::ERR_INCOMPLETE_CHUNKED_ENCODING
+AC2 chat requests before retry = 4, gaps ms = [1145,2129,4150]
+AC2 banner text = "连接中断：network error（STREAM_INTERRUPTED）\n重试"
+screenshot 10-ac2-retry-banner.png
+mock mode -> normal (200)
+AC2 assistant messages after retry = 1, total chat requests = 5
+screenshot 11-ac2-retry-success.png
+mock mode -> disabled (200)
+console.error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)
+AC3 composer disabled = true, paused notice = "助手已暂停使用"
+screenshot 12-ac3-assistant-disabled.png
+mock mode -> ratelimit (200)
+console.error: Failed to load resource: the server responded with a status of 503 (Service Unavailable)
+RATE_LIMITED composer disabled = false, banner = "请求过于频繁，请稍后再试（RATE_LIMITED）\n重试"
+screenshot 13-503-ratelimited.png
+mock mode -> normal (200)

@@ -1,9 +1,9 @@
 ﻿# npm ci  (clean copy, no node_modules, no build cache)
 # cwd: E:/AI接单/Clawhunt/delivery/work/1862/clean
-# started: 2026-11-27T12:19:02
+# started: 2026-11-27T12:30:57
 
 
-added 205 packages in 2m
+added 205 packages in 1m
 
 30 packages are looking for funding
   run `npm fund` for details
@@ -12,5 +12,5 @@ npm warn install-scripts   esbuild@0.21.5 (postinstall: node install.js)
 npm warn install-scripts
 npm warn install-scripts Run `npm install-scripts ls` to review, or `npm install-scripts approve <pkg>` to allow.
 
-# finished: 2026-11-27T12:20:52
+# finished: 2026-11-27T12:32:23
 EXIT=0

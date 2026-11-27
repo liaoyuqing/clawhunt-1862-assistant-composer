@@ -62,13 +62,14 @@ const draftValue = await page.getByTestId("composer-input").inputValue();
 note(`AC4 draft after reopen = ${JSON.stringify(draftValue)}`);
 await shot("04-ac4-draft-restored");
 
-// normal streaming
-await setMode("normal");
+// normal streaming: slow mode holds the stream open long enough for a mid-flight shot
+await setMode("slow");
 await page.getByTestId("send-button").click();
 await page.getByTestId("assistant-msg").first().waitFor();
-await page.waitForTimeout(1200);
-await shot("05-streaming-normal");
-await page.waitForTimeout(2500);
+await page.waitForTimeout(900);
+note(`mid-stream text = ${JSON.stringify((await page.getByTestId("assistant-msg").first().innerText()).slice(0, 60))}`);
+await shot("05-streaming-in-progress");
+await page.waitForTimeout(4000);
 note(`normal stream text = ${JSON.stringify((await page.getByTestId("assistant-msg").first().innerText()).slice(0, 80))}`);
 await shot("06-streaming-done");
 
@@ -135,6 +136,6 @@ note(`RATE_LIMITED composer disabled = ${await page.getByTestId("composer-input"
 await shot("13-503-ratelimited");
 
 await setMode("normal");
-writeFileSync(`${OUT}/screenshots.log`, log.join("\n") + "\n", "utf8");
+writeFileSync(`${OUT}/screenshots.txt`, log.join("\n") + "\n", "utf8");
 await browser.close();
 note("done");
